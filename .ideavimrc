@@ -1,0 +1,69 @@
+noremap <Space> <NOP>
+let mapleader=" "
+
+" Make Y to work from the cursor to the end of line
+map Y y$
+
+" Kakoune-inspired mappings
+map gl $
+map gh 0
+
+" Idea settings
+set idearefactormode=insert
+
+" remove bell sound
+set visualbell
+
+"" Plugins
+" emulate vim-surround
+set surround
+set which-key
+set notimeout
+
+" Easymotion
+set easymotion
+map <Leader>fs <Plug>(easymotion-s)
+
+set multiple-cursors
+map mc <A-n>
+map mx <A-x>
+map mp <A-p>
+
+set highlightedyank
+
+" Extended matching with % (emulates matchit)
+set matchit
+
+" Tree explorer (emulates NERDTree)
+set NERDTree
+map <leader>tt :NERDTreeToggle<CR>
+map <leader>tf :NERDTreeFind<CR>
+
+
+"" Idea key mappings
+" window navigation
+map <leader>wv <Action>(SplitVertically)
+map <leader>wh <Action>(SplitHorizontally)
+sethandler <c-j> a:vim
+sethandler <c-h> a:vim
+nnoremap <c-l> <c-w>l
+nnoremap <c-h> <c-w>h
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+
+" script execution
+map <leader>r <Action>(RenameElement)
+
+
+" code navigation
+map gd <Action>(GotoDeclaration)
+
+" Toggle between absolute and relative line numbers
+nnoremap <leader>n :call NumberToggle()<cr>
+   function! NumberToggle()
+     if(&relativenumber == 1)
+       set norelativenumber
+     else
+       set relativenumber
+     endif
+   endfunction
