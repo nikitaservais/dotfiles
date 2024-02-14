@@ -1,0 +1,2 @@
+(comment) @comment
+(variable) @keyword

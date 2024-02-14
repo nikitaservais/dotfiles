@@ -1,0 +1,5 @@
+[shell]
+program = "/opt/homebrew/bin/fish"
+
+[font]
+size = 13

@@ -1,0 +1,16 @@
+use-grammars = { except = [ "gemini", "perl" ] }
+
+[[language]]
+name = "prolog"
+grammar = "prolog"
+
+[[grammar]]
+name = "prolog"
+source = {path="/Users/nikita/Programming/tree-sitter-prolog"}
+
+[[language]]
+name = "racket"
+
+[language.auto-pairs]
+'(' = ')'
+'[' = ']'
