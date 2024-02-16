@@ -1,9 +1,8 @@
 set -gx EDITOR hx
 
-zoxide init fish | source
+zoxide init --cmd cd fish | source
 starship init fish | source
 
-alias cd="z"
 alias cat="bat"
 alias ls="eza"
 alias ll="ls -l"
