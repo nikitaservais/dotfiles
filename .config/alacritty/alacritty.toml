@@ -3,3 +3,6 @@ program = "/opt/homebrew/bin/fish"
 
 [font]
 size = 13
+
+[window]
+option_as_alt = "OnlyRight"
