@@ -18,12 +18,18 @@ brew install stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone git@github.com/nikitaservais/dotfiles.git
-$ cd dotfiles
+git clone git@github.com/nikitaservais/dotfiles.git
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 
 ```
-$ stow .
+stow .
+```
+
+# Zellij
+Generate completions for the specified shell.
+```
+zellij setup --generate-completion fish
 ```

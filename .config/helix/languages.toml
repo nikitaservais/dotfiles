@@ -14,3 +14,7 @@ name = "racket"
 [language.auto-pairs]
 '(' = ')'
 '[' = ']'
+
+[[language]]
+name = "racket"
+formatter = { command = "raco fmt" }
