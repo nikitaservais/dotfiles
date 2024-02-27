@@ -2,6 +2,7 @@ set -gx EDITOR hx
 
 zoxide init --cmd cd fish | source
 starship init fish | source
+zellij setup --generate-completion fish | source
 
 alias cat="bat"
 alias ls="eza"
