@@ -6,3 +6,6 @@ size = 13
 
 [window]
 option_as_alt = "OnlyRight"
+
+[keyboard]
+bindings = [{ key = "c", mods = "Command", action = "Copy" }]
