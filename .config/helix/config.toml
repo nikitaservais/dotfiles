@@ -1,16 +1,22 @@
 
 theme = "base16_transparent"
 
+
 [editor]
+auto-format = true
 line-number = "relative"
 bufferline = "always"
-auto-format = true
 
 [editor.soft-wrap]
 enable = true
 
 [keys.normal]
-C-up = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+C-up = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
 C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 
-C-s = [":write", ":config-reload"]
+A-s = [":write", ":config-reload"]

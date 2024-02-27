@@ -1,4 +1,4 @@
-use-grammars = { except = [ "gemini", "perl" ] }
+use-grammars = { except = ["gemini", "perl"] }
 
 [[language]]
 name = "prolog"
@@ -6,15 +6,21 @@ grammar = "prolog"
 
 [[grammar]]
 name = "prolog"
-source = {path="/Users/nikita/Programming/tree-sitter-prolog"}
+source = { path = "/Users/nikita/Programming/tree-sitter-prolog" }
 
 [[language]]
 name = "racket"
+formatter = { command = "raco", args = ["fmt"] }
 
 [language.auto-pairs]
 '(' = ')'
 '[' = ']'
+'"' = '"'
 
 [[language]]
-name = "racket"
-formatter = { command = "raco fmt" }
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+auto-format = true
+
+[[language]]
+name = "erlang"
