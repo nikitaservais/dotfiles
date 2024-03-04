@@ -2,7 +2,8 @@
 program = "/opt/homebrew/bin/fish"
 
 [font]
-size = 13
+normal = { family = "JetBrains Mono", style = "Regular" }
+size = 14
 
 [window]
 option_as_alt = "OnlyRight"
