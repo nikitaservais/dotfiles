@@ -1,6 +1,4 @@
-
-theme = "base16_transparent"
-
+theme = "gruvbox_dark_hard"
 
 [editor]
 auto-format = true
@@ -18,5 +16,4 @@ C-up = [
   "paste_before",
 ]
 C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
-
 A-s = [":write", ":config-reload"]

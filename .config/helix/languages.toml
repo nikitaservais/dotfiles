@@ -11,6 +11,7 @@ source = { path = "/Users/nikita/Programming/tree-sitter-prolog" }
 [[language]]
 name = "racket"
 formatter = { command = "raco", args = ["fmt"] }
+auto-format = true
 
 [language.auto-pairs]
 '(' = ')'
