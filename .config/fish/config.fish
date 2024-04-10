@@ -10,5 +10,7 @@ alias ll="ls -l"
 alias lll="ls -la"
 alias lt="ls -T"
 
+alias ghcs="gh copilot suggest"
+alias ghce="gh copilot explain"
 
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/nikita/.ghcup/bin $PATH # ghcup-env

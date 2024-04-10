@@ -1,0 +1,18 @@
+[user]
+	name = nservais
+	email = nikitaservais@outlook.com
+	signingkey = /Users/nikita/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true
+[merge]
+    tool = webstorm
+[mergetool "webstorm"]
+    cmd = webstorm merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+    trustExitCode = true
+
+[diff]
+	algorithm = histogram

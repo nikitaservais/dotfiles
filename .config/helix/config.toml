@@ -4,6 +4,11 @@ theme = "gruvbox_dark_hard"
 auto-format = true
 line-number = "relative"
 bufferline = "always"
+rulers = [80, 120]
+
+
+[editor.lsp]
+auto-signature-help = false
 
 [editor.soft-wrap]
 enable = true
@@ -17,3 +22,24 @@ C-up = [
 ]
 C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 A-s = [":write", ":config-reload"]
+
+# Use system clipboard
+# y = "yank_main_selection_to_clipboard"
+# p = "paste_clipboard_before"
+
+[editor.whitespace]
+render = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+render = true
+character = "╎"
+
+[editor.file-picker]
+hidden = false
+parents = false
+git-ignore = false
