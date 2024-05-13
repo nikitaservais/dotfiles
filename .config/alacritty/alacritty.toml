@@ -1,5 +1,7 @@
 [shell]
 program = "/opt/homebrew/bin/fish"
+# program = "zellij"
+# args = ["-l", "welcome"]
 
 [font]
 normal = { family = "JetBrains Mono", style = "Regular" }
@@ -9,4 +11,9 @@ size = 14
 option_as_alt = "OnlyRight"
 
 [keyboard]
-bindings = [{ key = "c", mods = "Command", action = "Copy" }]
+bindings = [
+  { key = "c", mods = "Command", action = "Copy" },
+  { key = "Back", mods = "Command", chars = "\u0015" },
+  { key = "ç", mods = "Command", chars = "\u0010\u0077" },
+  { key = "s", mods = "Command", chars = "\u00D2" },
+]

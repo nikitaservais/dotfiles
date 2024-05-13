@@ -6,10 +6,6 @@ line-number = "relative"
 bufferline = "always"
 rulers = [80, 120]
 
-
-[editor.lsp]
-auto-signature-help = false
-
 [editor.soft-wrap]
 enable = true
 
@@ -21,7 +17,7 @@ C-up = [
   "paste_before",
 ]
 C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
-A-s = [":write", ":config-reload"]
+"Ò" = [":write", ":config-reload"]
 
 # Use system clipboard
 # y = "yank_main_selection_to_clipboard"
@@ -43,3 +39,6 @@ character = "╎"
 hidden = false
 parents = false
 git-ignore = false
+
+[editor.lsp]
+display-inlay-hints = true

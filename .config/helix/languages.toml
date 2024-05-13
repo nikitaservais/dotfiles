@@ -24,4 +24,5 @@ formatter = { command = "taplo", args = ["fmt", "-"] }
 auto-format = true
 
 [[language]]
-name = "erlang"
+name = "haskell"
+auto-format = true
