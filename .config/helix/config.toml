@@ -38,7 +38,7 @@ character = "╎"
 [editor.file-picker]
 hidden = false
 parents = false
-git-ignore = false
+git-ignore = true
 
 [editor.lsp]
 display-inlay-hints = true

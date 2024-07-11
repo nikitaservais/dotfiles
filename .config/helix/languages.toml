@@ -26,3 +26,4 @@ auto-format = true
 [[language]]
 name = "haskell"
 auto-format = true
+formatter = { command = "hindent" }
