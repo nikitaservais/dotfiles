@@ -16,4 +16,5 @@ bindings = [
   { key = "Back", mods = "Command", chars = "\u0015" },
   { key = "ç", mods = "Command", chars = "\u0010\u0077" },
   { key = "s", mods = "Command", chars = "\u00D2" },
+  { key = "k", mods = "Shift | Command", chars = "\u00CB" },
 ]

@@ -18,6 +18,7 @@ C-up = [
 ]
 C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 "Ò" = [":write", ":config-reload"]
+"Ë" = [":format"]
 
 # Use system clipboard
 # y = "yank_main_selection_to_clipboard"

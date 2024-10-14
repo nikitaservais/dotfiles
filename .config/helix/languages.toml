@@ -27,3 +27,7 @@ auto-format = true
 name = "haskell"
 auto-format = true
 formatter = { command = "hindent" }
+
+[language-server.pylsp.config.pylsp]
+plugins.ruff.enabled = true
+plugins.black.enabled = true

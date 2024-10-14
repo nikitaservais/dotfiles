@@ -13,4 +13,9 @@ alias lt="ls -T"
 alias ghcs="gh copilot suggest"
 alias ghce="gh copilot explain"
 
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin /Users/nikita/.ghcup/bin $PATH # ghcup-env
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME
+set -gx PATH $HOME/.cabal/bin /Users/nikita/.ghcup/bin $PATH # ghcup-env
+
+# Created by `pipx` on 2024-07-16 17:06:38
+set PATH $PATH /Users/nikita/.local/bin
+# enable_transience
