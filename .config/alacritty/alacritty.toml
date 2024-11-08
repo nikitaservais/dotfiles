@@ -1,4 +1,4 @@
-[shell]
+[terminal.shell]
 program = "/opt/homebrew/bin/fish"
 # program = "zellij"
 # args = ["-l", "welcome"]
