@@ -4,25 +4,16 @@ theme = "gruvbox_dark_hard"
 auto-format = true
 line-number = "relative"
 bufferline = "always"
-rulers = [80, 120]
+rulers = [120]
+text-width = 80
+end-of-line-diagnostics = "hint"
+auto-completion = false
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
 
 [editor.soft-wrap]
 enable = true
-
-[keys.normal]
-C-up = [
-  "extend_to_line_bounds",
-  "delete_selection",
-  "move_line_up",
-  "paste_before",
-]
-C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
-"Ò" = [":write", ":config-reload"]
-"Ë" = [":format"]
-
-# Use system clipboard
-# y = "yank_main_selection_to_clipboard"
-# p = "paste_clipboard_before"
 
 [editor.whitespace]
 render = "all"
@@ -43,3 +34,18 @@ git-ignore = true
 
 [editor.lsp]
 display-inlay-hints = true
+
+[keys.normal]
+C-up = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+Cmd-s = [":write", ":format", ":write"]
+# Cmd-k = [":format"]
+
+# Use system clipboard
+# y = "yank_main_selection_to_clipboard"
+# p = "paste_clipboard_before"
