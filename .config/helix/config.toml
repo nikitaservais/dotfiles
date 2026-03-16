@@ -1,13 +1,14 @@
-theme = "gruvbox_dark_hard"
+theme = "gruvbox_dark_soft"
 
 [editor]
 auto-format = true
+auto-completion = true
+bufferline = "multiple"
 line-number = "relative"
-bufferline = "always"
 rulers = [120]
 text-width = 80
 end-of-line-diagnostics = "hint"
-auto-completion = false
+true-color = true
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
@@ -15,8 +16,12 @@ cursor-line = "hint"
 [editor.soft-wrap]
 enable = true
 
-[editor.whitespace]
-render = "all"
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+nbsp = "none"
+nnbsp = "none"
+newline = "none"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -35,6 +40,17 @@ git-ignore = true
 [editor.lsp]
 display-inlay-hints = true
 
+[editor.statusline]
+center = ["version-control"]
+right = [
+  "diagnostics",
+  "selections",
+  "primary-selection-length",
+  "register",
+  "position",
+  "file-encoding",
+]
+
 [keys.normal]
 C-up = [
   "extend_to_line_bounds",
@@ -43,9 +59,23 @@ C-up = [
   "paste_before",
 ]
 C-down = ["extend_to_line_bounds", "delete_selection", "paste_after"]
-Cmd-s = [":write", ":format", ":write"]
-# Cmd-k = [":format"]
+C-e = [
+  "search_selection_detect_word_boundaries",
+  "extend_search_next"
+]  # add to selection the next match of the current selection
+C-r = [":reload-all"]  # reload all files from disk
+Cmd-s = [":write"]
+Cmd-k = [":format"]
+space.i = [":toggle-option lsp.display-inlay-hints"]  # Toggle inlay hints
+F1 = [":sh floating-lazygit"]
+F2 = [":sh floating-yazi"]
+F3 = [":sh floating-serpl"]
 
-# Use system clipboard
-# y = "yank_main_selection_to_clipboard"
-# p = "paste_clipboard_before"
+"S-tab" = ["jump_backward"]
+X = [
+  "extend_line_up",
+  "extend_to_line_bounds"
+]  # move line selection up (unselect or select upwards)
+
+[keys.insert]
+C-space = "completion"

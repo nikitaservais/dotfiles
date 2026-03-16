@@ -1,23 +1,11 @@
-use-grammars = { except = ["gemini", "perl"] }
-
 [[language]]
-name = "prolog"
-grammar = "prolog"
-
-[[grammar]]
-name = "prolog"
-source = { path = "/Users/nikita/Programming/tree-sitter-prolog" }
-
-[[language]]
-name = "racket"
-formatter = { command = "raco", args = ["fmt"] }
+name = "toml"
 auto-format = true
-
-[[language]]
-name = "haskell"
-auto-format = true
-formatter = { command = "hindent" }
+language-servers = ["tombi"]
 
 [language-server.pylsp.config.pylsp]
 plugins.ruff.enabled = true
 plugins.black.enabled = true
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"
